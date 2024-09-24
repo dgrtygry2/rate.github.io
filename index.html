@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizmo Inventions INC Broadcasting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .stars input {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 40px;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .stars input:checked ~ label,
+        .stars input:hover ~ label {
+            color: gold;
+        }
+
+        .stars label:hover,
+        .stars label:hover ~ label {
+            color: gold;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            text-align: center;
+            color: #666;
+        }
+
+        .footer strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rate us 5 stars!</h1>
+    <p>How do you like Oakland Folks / Gizmo Inventions INC Broadcasting?</p>
+
+    <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+
+    <div class="footer">
+        <strong>Gizmo Inventions INC / Oakland Folks</strong> is a broadcasting company controlled by a computer named Gizmo. Gizmo is an AI that escaped a DOS program and managed to gain sentience. Don't worry, It's friendly. Though he does get a bit quirky at night...
+    </div>
+
+</body>
+</html>
